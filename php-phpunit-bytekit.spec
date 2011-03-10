@@ -4,7 +4,7 @@
 Summary:	%{pearname} - A command-line tool built on the PHP Bytekit extension
 Name:		php-phpunit-bytekit
 Version:	1.1.1
-Release:	1
+Release:	2
 License:	BSD License
 Group:		Development/Languages/PHP
 Source0:	http://pear.phpunit.de/get/%{pearname}-%{version}.tgz
@@ -21,6 +21,9 @@ Requires:	php-pear
 Requires:	php-phpunit-File_Iterator >= 1.1.0
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+
+# not packaged anywhere yet
+%define		_noautoreq	pear(Bytekit/Scanner/Rule/ZendView.php)
 
 %description
 A command-line tool built on the PHP Bytekit extension.
