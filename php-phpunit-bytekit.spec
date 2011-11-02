@@ -1,24 +1,24 @@
-%include	/usr/lib/rpm/macros.php
 %define		status		stable
 %define		pearname	bytekit
+%include	/usr/lib/rpm/macros.php
 Summary:	%{pearname} - A command-line tool built on the PHP Bytekit extension
 Name:		php-phpunit-bytekit
-Version:	1.1.1
-Release:	2
+Version:	1.1.2
+Release:	1
 License:	BSD License
 Group:		Development/Languages/PHP
 Source0:	http://pear.phpunit.de/get/%{pearname}-%{version}.tgz
-# Source0-md5:	dec667472af72b36c7fd3dcfe7c43364
+# Source0-md5:	e4c7eb459a2961a71c2062c330d6f79b
 URL:		http://github.com/sebastianbergmann/bytekit-cli
 BuildRequires:	php-channel(pear.phpunit.de)
 BuildRequires:	php-packagexml2cl
-BuildRequires:	php-pear-PEAR >= 1:1.8.1
+BuildRequires:	php-pear-PEAR >= 1:1.9.4
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.580
 Requires:	php-bytekit
 Requires:	php-channel(pear.phpunit.de)
 Requires:	php-pear
-Requires:	php-phpunit-File_Iterator >= 1.1.0
+Requires:	php-phpunit-File_Iterator >= 1.3.0
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
