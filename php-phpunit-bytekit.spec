@@ -11,6 +11,7 @@ Source0:	http://pear.phpunit.de/get/%{pearname}-%{version}.tgz
 # Source0-md5:	02c5a1a5cfe14ddb166ad8ed56bebcd5
 URL:		http://github.com/sebastianbergmann/bytekit-cli
 BuildRequires:	php-channel(pear.phpunit.de)
+BuildRequires:	php-channel(pear.symfony.com)
 BuildRequires:	php-packagexml2cl
 BuildRequires:	php-pear-PEAR >= 1:1.9.4
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
@@ -20,7 +21,7 @@ Requires:	php-channel(pear.phpunit.de)
 Requires:	php-ezc-ConsoleTools >= 1.6
 Requires:	php-pear
 Requires:	php-phpunit-File_Iterator >= 1.3.0
-Requires:	php-symfony-Finder >= 2.1.0-0.RC1
+Requires:	php-symfony2-Finder >= 2.1.0-0.RC1
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
