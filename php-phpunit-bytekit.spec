@@ -4,7 +4,7 @@
 Summary:	%{pearname} - A command-line tool built on the PHP Bytekit extension
 Name:		php-phpunit-bytekit
 Version:	1.1.3
-Release:	1
+Release:	2
 License:	BSD License
 Group:		Development/Languages/PHP
 Source0:	http://pear.phpunit.de/get/%{pearname}-%{version}.tgz
@@ -16,7 +16,7 @@ BuildRequires:	php-packagexml2cl
 BuildRequires:	php-pear-PEAR >= 1:1.9.4
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.580
-Requires:	php-bytekit
+Requires:	php(bytekit)
 Requires:	php-channel(pear.phpunit.de)
 Requires:	php-ezc-ConsoleTools >= 1.6
 Requires:	php-pear
