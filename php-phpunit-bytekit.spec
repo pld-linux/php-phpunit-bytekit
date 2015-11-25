@@ -4,7 +4,7 @@
 Summary:	%{pearname} - A command-line tool built on the PHP Bytekit extension
 Name:		php-phpunit-bytekit
 Version:	1.1.3
-Release:	2
+Release:	3
 License:	BSD License
 Group:		Development/Languages/PHP
 Source0:	http://pear.phpunit.de/get/%{pearname}-%{version}.tgz
@@ -15,18 +15,18 @@ BuildRequires:	php-channel(pear.symfony.com)
 BuildRequires:	php-packagexml2cl
 BuildRequires:	php-pear-PEAR >= 1:1.9.4
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
-BuildRequires:	rpmbuild(macros) >= 1.580
+BuildRequires:	rpmbuild(macros) >= 1.654
 Requires:	php(bytekit)
 Requires:	php-channel(pear.phpunit.de)
 Requires:	php-ezc-ConsoleTools >= 1.6
 Requires:	php-pear
 Requires:	php-phpunit-File_Iterator >= 1.3.0
-Requires:	php-symfony2-Finder >= 2.1.0-0.RC1
+Requires:	php-symfony2-Finder >= 2.7.7
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-# not packaged anywhere yet
-%define		_noautoreq	pear(Bytekit/Scanner/Rule/ZendView.php)
+# Bytekit/Scanner/Rule/ZendView.php - not packaged anywhere yet
+%define		_noautoreq_pear Symfony/Component/.* Bytekit/Scanner/Rule/ZendView.php
 
 %description
 A command-line tool built on the PHP Bytekit extension.
