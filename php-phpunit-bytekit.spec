@@ -1,6 +1,5 @@
 %define		status		stable
 %define		pearname	bytekit
-%include	/usr/lib/rpm/macros.php
 Summary:	%{pearname} - A command-line tool built on the PHP Bytekit extension
 Name:		php-phpunit-bytekit
 Version:	1.1.3
